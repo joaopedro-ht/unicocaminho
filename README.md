@@ -71,6 +71,7 @@ frontend/
 | `/subscriptions` | Assinaturas | Planos de assinatura e histórico de cobrança |
 | `/affiliate` | Programa de Afiliados | Sistema de indicação e comissões |
 | `/product` | Detalhes do Produto | Página de exemplo de produto/serviço |
+| `/splash` | Splash Screen | Tela inicial elegante com animações |
 | `/auth/login` | Login/Registro | Autenticação, registro de conta, onboarding |
 | `/dashboard` | Dashboard Admin | KPIs, gráficos, relatórios, mapa global |
 | `/profile` | Perfil do Usuário | Informações pessoais, convites, segurança |

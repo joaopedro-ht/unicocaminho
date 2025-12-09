@@ -89,10 +89,18 @@ export default function AllPages() {
       icon: 'fa-tag',
       color: 'bg-cyan-600',
       category: 'Produtos'
+    },
+    {
+      title: 'Splash Screen',
+      description: 'Tela inicial elegante com animações',
+      href: '/splash',
+      icon: 'fa-star',
+      color: 'bg-gradient-to-r from-blue-600 to-purple-600',
+      category: 'Interface'
     }
   ];
 
-  const categories = ['Navegação', 'Administração', 'Autenticação', 'Usuário', 'Pagamentos', 'Marketplace', 'Social', 'Assinaturas', 'Afiliados', 'Produtos'];
+  const categories = ['Navegação', 'Administração', 'Autenticação', 'Usuário', 'Pagamentos', 'Marketplace', 'Social', 'Assinaturas', 'Afiliados', 'Produtos', 'Interface'];
 
   return (
     <div className="min-h-screen bg-gray-50">
