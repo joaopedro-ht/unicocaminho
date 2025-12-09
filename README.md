@@ -25,12 +25,24 @@ frontend/
 │   │   ├── payment/           # Páginas de pagamento
 │   │   │   └── methods/       # Métodos de pagamento
 │   │   ├── profile/           # Perfil do usuário
+│   │   ├── services/          # Marketplace de serviços
+│   │   ├── social/            # Projetos sociais
+│   │   ├── subscriptions/     # Sistema de assinaturas
+│   │   ├── affiliate/         # Programa de afiliados
+│   │   ├── product/           # Detalhes de produto
+│   │   ├── splash/            # Tela inicial
+│   │   ├── pages/             # Listagem de todas as páginas
 │   │   ├── layout.tsx         # Layout principal
 │   │   ├── page.tsx           # Página inicial
-│   │   └── globals.css        # Estilos globais
+│   │   ├── globals.css        # Estilos globais
+│   │   └── favicon.ico        # Ícone do site
 │   ├── components/            # Componentes reutilizáveis
+│   │   ├── KPICard.tsx       # Cards de métricas
+│   │   └── NavButton.tsx     # Botões de navegação
 │   └── lib/                   # Utilitários e configurações
-├── tailwind.config.js         # Configuração Tailwind
+│       └── types.d.ts         # Definições de tipos TypeScript
+├── tailwind.config.js         # Configuração Tailwind CSS
+├── next.config.ts            # Configuração Next.js
 └── package.json
 ```
 
@@ -59,6 +71,41 @@ frontend/
 - **Fluxo de Pagamento**: Seleção e processamento seguro
 - **QR Code**: Suporte a PIX brasileiro
 - **Cartões de Crédito**: Interface completa para pagamentos
+
+### 5. Marketplace de Serviços
+- **Categorias**: Imóveis, Veículos, Serviços, Tecnologia, Moda, Casa & Decoração
+- **Busca Avançada**: Filtros por categoria, localização e preço
+- **Anúncios Premium**: Destaques e anúncios patrocinados
+- **Sistema de Avaliações**: Reviews e ratings de usuários
+
+### 6. Projetos Sociais
+- **Arrecadação**: Campanhas para projetos beneficentes
+- **Filtros por Categoria**: Educação, Saúde, Meio Ambiente, Pobreza
+- **Progress Tracking**: Acompanhamento do progresso das campanhas
+- **Transparência**: Relatórios detalhados de utilização dos recursos
+
+### 7. Sistema de Assinaturas
+- **Planos Flexíveis**: Básico, Profissional e Empresarial
+- **Gestão de Cobrança**: Histórico e métodos de pagamento
+- **Upgrade/Downgrade**: Mudança de planos a qualquer momento
+- **Relatórios de Uso**: Analytics de utilização da plataforma
+
+### 8. Programa de Afiliados
+- **Sistema de Indicação**: Links exclusivos para cada usuário
+- **Comissões Automáticas**: Pagamentos por indicações bem-sucedidas
+- **Materiais de Marketing**: Banners e templates prontos
+- **Dashboard de Performance**: Acompanhamento de cliques e conversões
+
+### 9. Detalhes de Produto
+- **Galeria de Imagens**: Fotos múltiplas com zoom
+- **Informações Detalhadas**: Especificações e características
+- **Contato Direto**: WhatsApp, telefone e mensagens
+- **Produtos Relacionados**: Sugestões baseadas em preferências
+
+### 10. Splash Screen
+- **Loading Elegante**: Animações e transições suaves
+- **Branding**: Apresentação da marca e valores
+- **Navegação Automática**: Redirecionamento automático para a home
 
 ## 🛣️ Rotas da Aplicação
 
@@ -98,6 +145,12 @@ frontend/
 - **Onboarding Screens**: Telas de introdução para novos usuários
 - **Profile Sections**: Seções organizadas do perfil
 - **Payment Methods**: Cards para diferentes métodos de pagamento
+- **Project Cards**: Cards para projetos sociais com progresso
+- **Subscription Plans**: Componentes para planos de assinatura
+- **Affiliate Dashboard**: Painel de performance de afiliados
+- **Product Gallery**: Galeria de imagens com navegação
+- **Category Grid**: Grid responsivo de categorias
+- **Feature Showcase**: Cards de recursos e benefícios
 
 ## 🎨 Design System
 
@@ -121,6 +174,9 @@ frontend/
 - **Total de Clientes**: 8,547 (+12.5%)
 - **Parceiros/Fornecedores**: 1,234 (+8.3%)
 - **Total de Anúncios**: 3,892 (+18.7%)
+- **Projetos Sociais Ativos**: 45 (+22.1%)
+- **Afiliados Ativos**: 892 (+15.3%)
+- **Assinaturas Ativas**: 2,156 (+8.7%)
 - **Receita Total**: R$ 4,371,346 (+13.8%)
 
 ### Distribuição Geográfica
@@ -177,11 +233,15 @@ npm start
 Acesse [http://localhost:3000](http://localhost:3000) após executar o projeto.
 
 ### Fluxo Principal
-1. **Página Inicial** → Seleção de seção
+1. **Splash Screen** → Página Inicial → Seleção de seção
 2. **Login/Registro** → Onboarding → Dashboard/Perfil
 3. **Dashboard** → Visualização de métricas e dados
 4. **Perfil** → Gerenciamento de conta
-5. **Pagamento** → Seleção e processamento de método
+5. **Serviços** → Marketplace → Detalhes do Produto
+6. **Projetos Sociais** → Campanhas → Doação
+7. **Assinaturas** → Planos → Gestão de Cobrança
+8. **Programa Afiliado** → Links → Dashboard de Performance
+9. **Pagamentos** → Seleção de método → Processamento
 
 ## 📝 Notas de Desenvolvimento
 
